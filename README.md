@@ -1,4 +1,10 @@
-# Build image
+# Tags available
+
+* latest,1.0.0
+    * node 15.10.0
+    * yarn 1.22.5
+
+# How to use
 
 ```
 docker-compose build
