@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+    nuxt:
+        build: .
+        restart: always
+        ports:
+            - ${APP_PORT:-3000}:3000
+        volumes:
+            - .:/code
+        environment:
+            NUXT_ENV: ${APP_ENV:-development}
+            APP_NAME: ${APP_NAME:-app}
